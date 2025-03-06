@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan's GPT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">Arry's GPT</div>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                <div class="avatar">
+                    <img src="{{ url_for('static', filename='lion.jpg') }}" alt="Aryan">
+                </div>
+                
+                <div class="text">Hello! I am Aryan. How can I assist you today?</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+            <button onclick="sendMessage()">Ask Aryan</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
